@@ -3,12 +3,12 @@
 
 const CACHE_NAME = 'predator-playbook-v1';
 const ASSETS_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/js/app.js',
-    '/js/content.js',
-    '/manifest.json'
+    '/mindset-playbook/',
+    '/mindset-playbook/index.html',
+    '/mindset-playbook/css/style.css',
+    '/mindset-playbook/js/app.js',
+    '/mindset-playbook/js/content.js',
+    '/mindset-playbook/manifest.json'
 ];
 
 // Install event - cache essential assets
