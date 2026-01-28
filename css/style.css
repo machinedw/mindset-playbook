@@ -6,11 +6,12 @@
 }
 
 :root {
-    --bg-primary: #000000;
-    --text-primary: #FFFFFF;
-    --text-accent: #D4AF37;
-    --progress-bg: #1a1a1a;
-    --progress-fill: #D4AF37;
+    --bg-primary: #FFFFFF;
+    --text-primary: #000000;
+    --text-accent: #4A90E2;
+    --progress-bg: #E0E0E0;
+    --progress-fill: #4A90E2;
+    --border-color: #E0E0E0;
 }
 
 body {
@@ -27,16 +28,111 @@ body {
     -webkit-user-select: none;
 }
 
-/* Progress Bar Container */
-#progress-container {
+/* Header with Menu Button */
+#header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 200;
+    background-color: var(--bg-primary);
+    padding: env(safe-area-inset-top, 15px) 20px 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#header-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+    text-align: center;
+}
+
+/* Chapter Menu Overlay */
+#chapter-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    z-index: 300;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: env(safe-area-inset-top, 60px) 0 env(safe-area-inset-bottom, 20px) 0;
+    border-right: 1px solid var(--border-color);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+#chapter-menu.open {
+    left: 0;
+}
+
+#chapter-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 250;
+    display: none;
+}
+
+#chapter-menu-overlay.open {
+    display: block;
+}
+
+.chapter-item {
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.chapter-item:active {
+    background-color: #F5F5F5;
+}
+
+.chapter-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.chapter-item-subtitle {
+    font-size: 13px;
+    color: #666;
+}
+
+.chapter-item.active {
+    background-color: #F0F8FF;
+}
+
+/* Progress Bar Container */
+#progress-container {
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 15px) + 60px);
+    left: 0;
+    right: 0;
     z-index: 100;
     background-color: var(--bg-primary);
-    padding: env(safe-area-inset-top, 20px) 20px 15px 20px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 10px 20px 15px 20px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 #chapter-info {
@@ -69,7 +165,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    padding-top: calc(env(safe-area-inset-top, 20px) + 60px);
+    padding-top: calc(env(safe-area-inset-top, 15px) + 135px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +201,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - env(safe-area-inset-top, 20px) - 80px);
+    height: calc(100vh - env(safe-area-inset-top, 15px) - 155px);
 }
 
 #lesson-text {
@@ -145,9 +241,9 @@ body {
 #lesson-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     display: block;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Transition Effects */
@@ -162,7 +258,7 @@ body {
     }
 }
 
-/* Responsive Design - iPhone 13 Pro Max Optimization (428x926) */
+/* Responsive Design */
 @media (max-width: 428px) {
     #lesson-text {
         font-size: 22px;
