@@ -4,8 +4,8 @@
   "description": "90-Day Strategic Mastery Training for Business Dominance",
   "start_url": "/mindset-playbook/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "orientation": "portrait-primary",
   "icons": [
     {
