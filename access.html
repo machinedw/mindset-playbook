@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predator's Playbook - Access Instructions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #000;
+            color: #fff;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #D4AF37;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #D4AF37;
+            margin: 30px 0 15px;
+            font-size: 1.5em;
+        }
+        .status {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #D4AF37;
+        }
+        .status-good {
+            border-left-color: #2ecc71;
+        }
+        .link {
+            display: inline-block;
+            background: #D4AF37;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        .link:hover {
+            background: #c19b2f;
+        }
+        code {
+            background: #1a1a1a;
+            padding: 2px 8px;
+            border-radius: 3px;
+            color: #D4AF37;
+        }
+        ol, ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦁 The Predator's Playbook</h1>
+        
+        <div class="status status-good">
+            <strong>✅ Status:</strong> App is built and ready to deploy
+        </div>
+
+        <h2>📱 How to Access Your App</h2>
+        
+        <p><strong>Option 1: Deploy via Publish Tab (RECOMMENDED)</strong></p>
+        <ol>
+            <li>Click the <strong>"Publish"</strong> tab at the top of this window</li>
+            <li>Click <strong>"Publish Project"</strong></li>
+            <li>You'll get a public URL that works on any device</li>
+            <li>Share that URL or access it on your iPhone 13 Pro Max</li>
+        </ol>
+
+        <div class="status">
+            <strong>Why Publish Tab?</strong><br>
+            The Publish tab creates a permanent, public URL with no authentication required. Perfect for accessing on your iPhone and installing as a PWA.
+        </div>
+
+        <h2>📦 What's Included</h2>
+        <ul>
+            <li><strong>90 Daily Lessons</strong> - Strategic wisdom (max 6 lines each)</li>
+            <li><strong>13 Chapters</strong> - Foundation to Legacy</li>
+            <li><strong>Chapter-Based Progress Bar</strong> - Resets each chapter</li>
+            <li><strong>Auto-Save Progress</strong> - localStorage remembers your position</li>
+            <li><strong>Tap Navigation</strong> - Left/right sides + swipe gestures</li>
+            <li><strong>iPhone 13 Pro Max Optimized</strong> - 428×926px perfect fit</li>
+            <li><strong>PWA Ready</strong> - Install to home screen</li>
+            <li><strong>Offline Mode</strong> - Works without internet</li>
+        </ul>
+
+        <h2>🎯 Once Deployed:</h2>
+        <ol>
+            <li>Open the published URL in Safari on your iPhone</li>
+            <li>Tap the <strong>Share button</strong> (box with arrow)</li>
+            <li>Scroll down and tap <strong>"Add to Home Screen"</strong></li>
+            <li>Launch from home screen like a native app</li>
+        </ol>
+
+        <h2>🗂️ Project Files</h2>
+        <ul>
+            <li><code>index.html</code> - Main app</li>
+            <li><code>css/style.css</code> - Premium dark styling</li>
+            <li><code>js/app.js</code> - Navigation & progress logic</li>
+            <li><code>js/content.js</code> - All 90 lessons</li>
+            <li><code>manifest.json</code> - PWA config</li>
+            <li><code>sw.js</code> - Service worker (offline mode)</li>
+            <li><code>icons/</code> - App icons for installation</li>
+        </ul>
+
+        <h2>💪 You're Ready</h2>
+        <p>Your 90-day strategic mastery training app is complete. Deploy it via the <strong>Publish tab</strong>, then start your transformation.</p>
+        
+        <p style="margin-top: 30px; color: #D4AF37; font-size: 1.2em;">
+            <strong>Day 1 is waiting. The clock is ticking.</strong>
+        </p>
+    </div>
+
+    <script>
+        // Auto-redirect if main app exists
+        setTimeout(() => {
+            const check = confirm("Would you like to try opening the main app? (May require authentication in preview mode)");
+            if (check) {
+                window.location.href = '/index.html';
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

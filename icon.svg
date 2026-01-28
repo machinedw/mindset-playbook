@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black Background -->
+  <rect width="512" height="512" fill="#000000" rx="115"/>
+  
+  <!-- Gold Lion Symbol (Abstract Predator Icon) -->
+  <path d="M256 140 L300 180 L340 160 L360 200 L340 240 L300 260 L256 300 L212 260 L172 240 L152 200 L172 160 L212 180 L256 140Z" 
+        fill="#D4AF37" stroke="#D4AF37" stroke-width="4"/>
+  
+  <!-- Crown Points -->
+  <path d="M256 100 L256 140 M220 120 L256 140 M292 120 L256 140" 
+        stroke="#D4AF37" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Eye Symbol (Strategic Vision) -->
+  <ellipse cx="256" cy="200" rx="40" ry="20" fill="#000000"/>
+  <circle cx="256" cy="200" r="8" fill="#D4AF37"/>
+  
+  <!-- Power Lines -->
+  <path d="M200 320 L256 300 L312 320 M200 340 L256 320 L312 340 M200 360 L256 340 L312 360" 
+        stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- "P" Letter -->
+  <text x="256" y="430" font-family="Inter, Arial, sans-serif" font-size="160" font-weight="700" 
+        fill="#D4AF37" text-anchor="middle">P</text>
+</svg>
