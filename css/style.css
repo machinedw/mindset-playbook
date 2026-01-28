@@ -109,8 +109,8 @@ body {
 }
 
 #lesson-text {
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 22px;
+    line-height: 1.8;
     font-weight: 400;
     color: var(--text-primary);
     margin-bottom: 40px;
@@ -165,8 +165,8 @@ body {
 /* Responsive Design - iPhone 13 Pro Max Optimization (428x926) */
 @media (max-width: 428px) {
     #lesson-text {
-        font-size: 17px;
-        line-height: 1.65;
+        font-size: 22px;
+        line-height: 1.8;
         padding: 0 10px;
         margin-bottom: 30px;
     }
@@ -182,8 +182,8 @@ body {
 
 @media (max-width: 375px) {
     #lesson-text {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 22px;
+        line-height: 1.8;
     }
 
     #lesson-image-container {
